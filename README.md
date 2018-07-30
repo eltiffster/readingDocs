@@ -30,7 +30,7 @@ Documentation can look very VERY different from source to source, and not all do
   - *License:* Any conditions or rules for distribution of the software.
   - *Updates or Release History:* Notes about new releases, fixes, and the like. If a piece of software seems outdated, it may be depreciated and non-functional.
 
-**Note:** Most documentation incorporates aspects of more than one type. It's rare to find a doc that doesn't.
+**Note:** Most documentation incorporates aspects of more than one type. In fact, it's rare to find a doc that doesn't.
 
 ## On Reading and Using Documentation
 
