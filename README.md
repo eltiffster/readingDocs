@@ -6,7 +6,7 @@ Here's the most common scenario in which I read documentation: I'm just starting
 
 In short, I'm reading docs because I want to know what steps are involved and what the final product might look like—without investing too much time and resources upfront or reinventing the wheel. However, reading documentation is like trying to find a word in a dictionary without knowing how to spell it: how do I find what I'm looking for when I don't know what to look for?
 
-This guide walks through types of documentation, how to parse them, and common conventions in web documentation (e.g. README files on Github). It provides advice and tips to help you navigate docs and sift the dizzying amount of information on the internet. Although much of this advice holds true for many types of software, I'll be using examples from [Python](https://www.python.org/), [Machine Learning](https://github.com/jcjohnson/torch-rnn), [Command Line](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md), [Arduino](https://www.arduino.cc/), [JavaScript](https://www.w3schools.com/js/js_intro.asp) and [Twine](http://twinery.org/).
+This guide walks through types of documentation, how to parse them, and common conventions in web documentation (e.g. README files on Github). It provides advice and tips to help you navigate docs and sift the dizzying amount of information on the internet. Although much of this advice holds true for many types of software, I'll be using examples from [Python](https://www.python.org/), [Machine Learning](https://github.com/jcjohnson/torch-rnn), [Command Line](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md), [Arduino](https://www.arduino.cc/), [JavaScript](https://www.w3schools.com/js/js_intro.asp), and [Twine](http://twinery.org/).
 
 ## Overview
 
@@ -46,20 +46,23 @@ In case you haven't guessed already:
 Text formatted in code blocks like this are commands
 to be typed in as is.
 ```
-Code can also be `formatted inline`. Often, the code blocks contain commands for Linux/Bash Command Line. You can find this in Terminal on a Mac or [Bash on Ubuntu on Windows](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) in Windows 10. For older Windows operating systems, you can try [Git BASH](https://gitforwindows.org/). (For more on the Command Line and what it's for, see this [excellent explanation](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md) by Jojo Karlin, Jonathan Reeve, Patrick Smyth, Steven Zweibel. You can also play around with the Command Line in [DH Box](http://dhbox.org/).)
+Code can also be `formatted inline`. Often, the code blocks contain commands for Linux/Bash Command Line. You can find this in Terminal on a Mac or [Bash on Ubuntu on Windows](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) in Windows 10. For older Windows operating systems, you can try [Git BASH](https://gitforwindows.org/). (For more on the Command Line and what it's for, see this [excellent explanation](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md) by Jojo Karlin, Jonathan Reeve, Patrick Smyth, Steven Zweibel. You can also play around with the Command Line in [DH Box](http://dhbox.org/).
 
 How can you tell if some code is meant for the Command Line? You might see things like this:
 ```
 #This command installs some software named some_program
 sudo pip install some_program
+
 #This command clones/downloads a Github repository
 git clone https://github.com/somerepo
+
 #This command executes code (named some_script.py) written in Python 3
 python3 some_script.py
+
 #This navigates into a directory named some_dir
 cd some_dir
 ```
-With most code blocks, whoever writes the documentation usually won't specify what language it is. Readers are expected to know from the syntax of the commands and this can be confusing for beginners.
+With most code blocks, the documentation writer likely won't specify what language it's in. Readers are expected to know from the syntax of the commands and this can be confusing for beginners.
 
 Let's look at an IRL example from the [torch-rnn documentation](https://github.com/jcjohnson/torch-rnn) written by Justin Johnson:
 
@@ -76,12 +79,12 @@ cd torch-hdf5
 luarocks make hdf5-0-0.rockspec
 ```
 
-This is a series of commands you would type into Command Line (having installed Lua). Note that you have to press Enter to run something in Command Line, so make sure you do that after every line. The words `#after the hash` are comments ([we'll talk about them later](5-useful-options-commands-or-keyboard-shortcuts)), so you don't need to type them into the Command Line console.
+This is a series of commands you would type into Command Line (having installed Lua). Note that you have to press Enter to run something in Command Line, so make sure you do that after every line. The words `#after the hash` are comments ([we'll talk about them later](#5-useful-options-commands-or-keyboard-shortcuts)), so you don't need to type them into the Command Line console.
 
 ### 4. Copy/Paste
 When I talk to people in my home department (English Literature), some are reluctant to copy/paste and use code they find on the internet in their own programs. In the Humanities, we're taught that using other people's work without giving credit, formatted according to specific conventions, is plagiarism and should be avoided.
 
-For better or worse, this is generally not the way coders operate. If anything, copy/pasting code is encouraged. Not only does it save you time and effort (and possibly a lot of frustration), but you can be reasonably confident that it will work and that you haven't introduced any errors by mistyping something. Of course, this should be balanced by opportunities to learn by writing your own code (manually type out something you've found can be a good learning experience).
+For better or worse, this is generally not the way coders operate. If anything, copy/pasting code is encouraged. Not only does it save you time and effort (and possibly a lot of frustration), but you can be reasonably confident that it will work and that you haven't introduced any errors by mistyping something. Of course, this should be balanced with opportunities to learn by writing your own code (manually type out something you've found can be a good learning experience).
 
 However, chances are that you'll write a bit of original anyway, since you'll probably have to modify anything you find to suit the situation at hand. At the very least, you should change variable names ([what's a variable?](https://github.com/szweibel/DHSI-API-workshop/blob/master/python/sections/variables.md)) to something more descriptive for your project.
 
@@ -89,7 +92,7 @@ However, chances are that you'll write a bit of original anyway, since you'll pr
 Here are some tips for working with code or text editors such as [Notepad++](https://notepad-plus-plus.org/), [Sublime](https://www.sublimetext.com/), or [Atom](https://atom.io/).
 
 #### a. Word Wrap
-This is usually under the View dropdown menu in your text editor. Basically, all it does is shift words to a new line when it would otherwise continue past the window—similar to how Microsoft Word automatically jumps to a new line once you've reached the maximum width of your document. Even if you have word wrap enabled in a text editor, the code will still execute as if it were all written on the same line (this is very important in coding!).
+This is usually under the View dropdown menu in your text editor. Basically, all it does is shift words to a new line when it would otherwise continue outside the window—this is similar to how Microsoft Word automatically jumps to a new line once you've reached the maximum width of your document. Even if you have word wrap enabled, the code will still execute as if it were all written on the same line (this is very important in coding!).
 
 #### b. Find and Replace: Cntrl + h
 This is especially helpful for renaming variables, which can happen if you discover that a name conflicts with something else in your code, or for other reasons. Many text editors have extra options such as matching case.
@@ -98,7 +101,7 @@ This is especially helpful for renaming variables, which can happen if you disco
 Indentation is meaningful in most, if not all, coding languages. For example, code inside [conditionals](http://www.openbookproject.net/books/bpp4awd/ch04.html) or [loops](https://www.tutorialspoint.com/computer_programming/computer_programming_loops.htm) often needs to be indented. As a visual cue, it's also more human-readable that way!
 
 #### d. Commenting Out and Uncommenting: Cntrl + /
-To "comment out" something means to turn a block of code into a comment, thereby making it inert or dormant (the computer won't run it). More specifically, changing that code into a comment (or just writing a comment) signals the computer to skip those lines when running the program. "Uncommenting" is the reverse of commenting out: your comment becomes executable code.
+To "comment out" something means to turn a block of code into a comment, thereby making it inert or dormant (the computer won't run it). More specifically, changing that code into a comment signals the computer to skip those lines when running the program. "Uncommenting" is the reverse of commenting out: your comment becomes executable code.
 
 Some examples of comment format/syntax:
 
@@ -112,7 +115,7 @@ Some examples of comment format/syntax:
 <!--This is a comment in Twine's Harlowe format. (same as HTML)-->
 ```
 
-This can be very useful as a non-destructive way of "erasing" code without actually deleting it. Sometimes create a duplicate or back up once I've progressed to a certain stage and comment it out. That way, if I play around with the code further and get stuck, I can always return to a clean copy that I know still works.
+This can be very useful as a non-destructive way of "erasing" code without actually deleting it. Sometimes, once I've progressed to a certain stage, I create a duplicate or back up version of some code and comment it out. That way, if I play around with the code further and get stuck, I can always return to a clean copy that I know still works.
 
 You can also use this technique to alternate between two options by commenting out the option you don't need and potentially uncommenting it later when you need it. For example, say I want a [Python script](https://github.com/eltiffster/authorFunction/blob/master/code/cleanup.py) that I can apply either to a list of specific files or to every file in a specific directory. I could switch between the two like this:
 
@@ -121,7 +124,7 @@ You can also use this technique to alternate between two options by commenting o
 Additionally, you can print variables or values (see below) to the screen to help with debugging and comment them out after.
 
 ### 6. If you think, "There must be an easier way to do this," then there probably is.
-As I mentioned at the beginning of this guide, avoid reinventing the wheel wherever possible. In practical terms, this might mean searching for [a code library](https://www.techopedia.com/definition/3828/software-library) that does what you're looking for, rather than assuming you need to write something completely from scratch. If one library doesn't have a built-in option for your specific use case, a similar one might. Similarly, if a would-be solution doesn't seem to be working, don't feel the need to make it work with brute force. There may be a different, less troublesome solution elsewhere.
+As I mentioned at the beginning of this guide, avoid reinventing the wheel wherever possible. In practical terms, this might mean searching for [a code library](https://www.techopedia.com/definition/3828/software-library) that does what you're looking for, rather than assuming you need to write something completely from scratch. If one library doesn't have a built-in option for your specific use case, a similar one might. Similarly, if a would-be solution is hard to get working, don't feel the need to make it work with brute force. There may be a different, less troublesome solution elsewhere.
 
 When reading documentation, look for examples, screenshots, or videos that show you exactly what the end result of some code or process looks like. This will not only help with debugging by comparing what you expect to what you get; it'll also help you decide if what you get is close enough what you're looking for—or if you want to look elsewhere.
 
@@ -143,7 +146,7 @@ window.alert(something) //print to an alert box
 <<print $something>>
 ```
 
-As mentioned above, you can print variables or values. This is helpful for checking if the output of a function is what you expected it to be. If you have a complex function with several discrete steps or pass the output of one function into the input of another, printing the output of each step/function can save you a lot of frustration. Otherwise, if something breaks, you'll have a harder time figuring out where it goes wrong!
+As mentioned above, you can print variables or values. This is helpful for checking if the output of a function is what you expected it to be. If you have a complex function with several discrete steps, or you pass the output of one function into the input of another, printing the output of each step/function can save you a lot of frustration. Otherwise, if something breaks, you'll have a harder time figuring out where it goes wrong!
 
 Yes, there will probably be an [error message](#9-understanding-error-messages) pointing to a specific line or spot in your code anyway, but I still prefer to know earlier where possible. A decision you make in solving the error may have consequences in other code elsewhere (e.g. choosing to ditch a specific library).
 
@@ -168,23 +171,22 @@ for file in os.listdir(sourcePath):
 ### 8. Start Small and Scale Up
 Another way to avoid frustration is to start with the smallest scope possible (in software development circles, called a [Minimum Viable Product](https://en.wikipedia.org/wiki/Minimum_viable_product) or MVP), and then increase the complexity gradually. I recommend saving the MVP separately before messing with it further. That way, you always have a workable version at hand.
 
-Writing or testing code is an iterative or recursive process. I've heard it described as pushing a broken car down a hill, tinkering under the hood, and then pushing it back up and down the hill again. Put simply, coders run their programs over and over and over again before they work satisfactorily. This might seem weird to humanities scholars, who obsess over just the right words or turn of phrase. Although writing is also an iterative or recursive process, we often go through several stages of revision before "testing" it on anyone, especially if we're perfectionists.
+Writing or testing code is an iterative or recursive process. I've heard it described as pushing a broken car down a hill, tinkering under the hood, and then pushing it back up and down the hill again. Put simply, coders run their programs over and over and over again before they work satisfactorily. This might seem odd to humanities scholars when we obsess over just the right words or turn of phrase. Although writing is also an iterative or recursive process, we often go through several stages of revision before "testing" it on anyone, especially if we're perfectionists.
 
 However, in coding, writing big chunks of code before or without testing can end up working against you since we wind up in the same conundrum as in number 6: you know there's an error, but you don't quite know what it is.
 
 ### 9. Understanding Error Messages
-If you've spent time [copy/pasting solutions](copy-paste) from the web, you may have noticed that said solutions seem to introduce their own errors. Here are some frequent examples:
+If you've spent time [copy/pasting solutions](#4-copypaste) from the web, you may have noticed that said solutions seem to introduce their own errors. Here are some frequent examples:
 
 | Error | Sample Error Message | Description | Possible Fix |
 | -----------|---------|-------------|-------------------|
-| Missing library | *In Arduino:*<br/>`error: 'FastLED' was not declared in this scope` | Happens when you try to use a library that you don't have installed or forgot to include/import it. | *In Arduino:*<br/> Go to Sketch > Include Library > Manage Libraries and install the library you need (here, it's FastLED). If you installed the library but it's still not working, you may have forgotten to include it with `#include<libraryName.h>` (where libraryName is name of the library).|
-| Missing variable | *In Twine:*<br/>`Error: <<print>>: bad evaluation: myVar is not defined` | `_____ is not defined` is a classic case of the missing variable. It happens when you call a variable without having defined or declared it (i.e. assigned it a value) beforehand. If you copy/paste something from a help forum, this can happen because whoever provided the solution used arbitrary variable names for the sake of demonstration. There could also be a [scope issue](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html). |  Declare the variable somewhere in the code ahead (in an earlier line) than where you need it. Note that this will also depend on [the scope](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html) you want your variable to have. This means thinking about questions such as do I need to use the variable in multiple functions? Do I want the its value to be the same for each of the functions or change as the program runs? nbsp;It's helpful to understand [global vs. local variables](https://www.arduino.cc/reference/en/language/variables/variable-scope--qualifiers/scope/) too, but be aware that different programming languages or applications might handle scope differently. |
-| You're not my type | *In Python:*<br/>`TypeError: Can't convert 'int' object to str implicitly` | For many coding languages, variables and values can be sorted into [several data types](https://www.datacamp.com/community/tutorials/data-structures-python#primitive) (e.g. integer, string, list). When you try to perform an operation on one type of data that is meant for another type, you get this error. &nbsp;In this example, Python is telling you that you're trying to treat an integer (a whole number) as if it were a string (of letters or characters or, in other words, text). This error occurs if you try to drop an integer into a prose statement. | Some programming languages have built-in ways of converting one data type to another. Here, you'd probably want the [str() method](https://developers.google.com/edu/python/strings).
-If you're not sure what type a variable is, you can use the [type()](http://www.diveintopython.net/power_of_introspection/built_in_functions.html) method, which returns the type of a specific variable/value. |
+| Missing library | *In Arduino:*<br/>`error: 'FastLED' was not declared in this scope` | Happens when you try to use a library that you don't have installed or forgot to include/import it. | Go to Sketch > Include Library > Manage Libraries and install the library you need (here, it's FastLED). If you installed the library but it's still not working, you may have forgotten to include it with `#include<libraryName.h>` (where libraryName is name of the library).|
+| Missing variable | *In Twine:*<br/>`Error: <<print>>: bad evaluation: myVar is not defined` | `_____ is not defined` is a classic case of the missing variable. It happens when you call a variable without having defined or declared it (i.e. assigned it a value) beforehand. If you copy/paste something from a help forum, this can happen because whoever provided the solution used arbitrary variable names for the sake of demonstration. There could also be a [scope issue](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html). |  Declare the variable somewhere in the code ahead (in an earlier line) than where you need it. Note that this will also depend on [the scope](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html) you want your variable to have. This means thinking about questions such as do I need to use the variable in multiple functions? Do I want the its value to be the same for each of the functions or change as the program runs? &nbsp; It's helpful to understand [global vs. local variables](https://www.arduino.cc/reference/en/language/variables/variable-scope--qualifiers/scope/) too, but be aware that different programming languages or applications might handle scope differently. |
+| You're not my type | *In Python:*<br/>`TypeError: Can't convert 'int' object to str implicitly` | For many coding languages, variables and values can be sorted into [several data types](https://www.datacamp.com/community/tutorials/data-structures-python#primitive) (e.g. integer, string, list). When you try to perform an operation on one type of data that is meant for another type, you get this error. &nbsp; In this example, Python is telling you that you're trying to treat an integer (a whole number) as if it were a string (of letters or characters or, in other words, text). This error occurs if you try to drop an integer into a prose statement. | Many programming languages have built-in ways of converting one data type to another. Here, you'd probably want the [str() method](https://developers.google.com/edu/python/strings). &nbsp; You might also want to double-check what data type something is to see if you've declared ti correctly. If you're not sure what type a variable is, you can use the [type()](http://www.diveintopython.net/power_of_introspection/built_in_functions.html) method, which returns the type of a specific variable/value. |
 | Syntax error |*In JavaScript:*<br/>`SyntaxError: missing ; before statement` | This is maybe the most annoying problem of the bunch but also the easiest to fix. Chances are, you missed a punctuation mark somewhere. (A classic one is a missing semicolon at the end of a line.) | Pretty straightforward: find and correct the error. Sometimes copy/pasting the search error into Google will bring up a [Stack Overflow](https://stackoverflow.com/) question from someone who made a similar mistake. |
 
 
 ### 10. Read More Documentation
 Hopefully these tips help, but there's no real substitute for reading lots of documentation yourself and experimenting with code. Given how much documentation varies from source to source, it's impossible to anticipate every potential situation you could encounter.
 
-Over time, you'll get a feel for the scope and complexity of different projects. Where possible, try to come up with a project driven by your own interests rather than an arbitrary exercise. Like learning any language, even a programming language, navigating documentation is a skill earned through practice and the desire to create or say something meaningful of your own.
+Over time, you'll get a feel for the scope and complexity of different projects. Where possible, try to come up with a project driven by your own interests rather than an arbitrary exercise. Like learning any language, even a programming language, navigating documentation is a skill earned through practice and the motivation to create or say something meaningful of your own.
