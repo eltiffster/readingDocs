@@ -32,12 +32,17 @@ This guide walks through types of documentation, how to parse them, and common c
 
 Documentation can look very VERY different from source to source, and not all documentation is well-written (arguably, most is not). Docs vary in organization and level of detail, among many other ways. What follows is a brief, non-exhaustive typology of stuff on the web:
 
-- #### Tutorials: usually, step-by-step instructions to accomplish a specific task. Even if it's not exactly what you're looking for, similar projects might still have useful code you can modify. [See examples](https://programminghistorian.org/en/lessons/) from Programming Historian.
-- #### Topical Guides: information about a specific subject or feature. [See example](https://internetarchive.readthedocs.io/en/latest/items.html) about Items in the Internet Archives library and API.
+#### Tutorials:
+Usually, step-by-step instructions to accomplish a specific task. Even if it's not exactly what you're looking for, similar projects might still have useful code you can modify. [See examples](https://programminghistorian.org/en/lessons/) from Programming Historian.
+#### Topical Guides:
+Information about a specific subject or feature. [See example](https://internetarchive.readthedocs.io/en/latest/items.html) about Items in the Internet Archives library and API.
 - #### Reference Guides: this type of doc most resembles a literal dictionary and typically provides a bare-bones description of a specific function or command. Especially useful if you know vaguely what you need but you forget the syntax (what you actually type in). [See example](https://www.arduino.cc/reference/en/): Arduino's reference guide for functions.
-- #### Cookbooks: A collection of code examples or recipes for a specific software. I've never found this organically online (examples are often rolled into other types of docs), but it seems pretty common in e-book or book format. You can find a lot of them through UVic Libraries and probably other library search portals too.
-- #### Help Forums: [Stack Overflow](https://stackoverflow.com/) is the most (in)famous and often most helpful, although you can also find stuff in GitHub discussions or sometimes even reddit.
-- #### README Files: This is what you'll find on GitHub. [See example: torch-rnn docs](https://github.com/jcjohnson/torch-rnn) by Justin Johnson. (Technically, this guide you're reading is a very unconventional README.) Most README files are split into sections:
+#### Cookbooks:
+A collection of code examples or recipes for a specific software. I've never found this organically online (examples are often rolled into other types of docs), but it seems pretty common in e-book or book format. You can find a lot of them through UVic Libraries and probably other library search portals too.
+#### Help Forums:
+[Stack Overflow](https://stackoverflow.com/) is the most (in)famous and often most helpful, although you can also find stuff in GitHub discussions or sometimes even reddit.
+#### README Files:
+This is what you'll find on GitHub. [See example: torch-rnn docs](https://github.com/jcjohnson/torch-rnn) by Justin Johnson. (Technically, this guide you're reading is a very unconventional README.) Most README files are split into sections:
   - *Installation:* How to install something step-by-step.
   - *Dependencies or Requirements:* Other things that need to be pre-installed for it to work (e.g. code libraries or other software).
   - *Support:* Whether the software requires a specific operating system (e.g. Windows) or version (e.g. Python 3 vs. Python 2).
