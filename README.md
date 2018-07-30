@@ -9,7 +9,7 @@ In short, I'm reading docs because I want to know what steps are involved and wh
 This guide walks through types of documentation, how to parse them, and common conventions in web documentation (e.g. README files on Github). It provides advice and tips to help you navigate docs and sift the dizzying amount of information on the internet. Although much of this advice holds true for many types of software, I'll be using examples from [Python](https://www.python.org/), [Machine Learning](https://github.com/jcjohnson/torch-rnn), [Command Line](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md), [Arduino](https://www.arduino.cc/), [JavaScript](https://www.w3schools.com/js/js_intro.asp), and [Twine](http://twinery.org/).
 
 ## Overview
-[Types of Documentation](#types-of-documentation)
+**[Types of Documentation](#types-of-documentation)**
   * [Tutorials](#tutorials)
   * [Topical Guides](#topical-guides)
   * [Reference Guides](#reference-guides)
@@ -17,7 +17,7 @@ This guide walks through types of documentation, how to parse them, and common c
   * [Help Forums](#help-forums)
   * [README Files](#readme-files)
 
-[Reading and Using Documentation](#reading-and-using-documentation)
+**[Reading and Using Documentation](#reading-and-using-documentation)**
   1. [Narrowing Your Search Terms](#1-narrowing-your-search-terms)
   2. [Skim It](#2-skim-it)
   3. [Code and the Command Line](#3-code-and-the-command-line)
