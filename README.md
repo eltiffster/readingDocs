@@ -61,7 +61,7 @@ This is what you'll find on GitHub. [See example: torch-rnn docs](https://github
 ## Reading and Using Documentation
 
 ![some code written in Python](optoCode.png)
-<p align="center"><em>Python code written in the [Sublime Text Editor](#5-useful-options-commands-or-keyboard-shortcuts).</em></p>
+<p align="center"><em>Python code written in the <a href="#5-useful-options-commands-or-keyboard-shortcuts">Sublime Text Editor</a>.</em></p>
 
 ### 1. Narrowing Your Search Terms
 This is half the battle, since knowing an accurate search term will yield better results. For example, say I want to make a light display with Arduino that flashes different colours. Googling "arduino light display sound" might give me a wide range of results, some of which are unrelated to my project. But based on that, I might find that "sound-reactive LED arduino" or "arduino music visualizer" is closer to what I'm looking for. Additionally, consider if you can refine your search using [boolean operators or other methods](https://www.uvic.ca/library/research/tips/searchsmart/index.php).
