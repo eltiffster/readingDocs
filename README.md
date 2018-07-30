@@ -16,6 +16,7 @@ This guide walks through types of documentation, how to parse them, and common c
   * [Cookbooks](#cookbooks)
   * [Help Forums](#help-forums)
   * [README Files](#readme-files)
+
 [Reading and Using Documentation](#reading-and-using-documentation)
   1. [Narrowing Your Search Terms](#1-narrowing-your-search-terms)
   2. [Skim It](#2-skim-it)
