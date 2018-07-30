@@ -31,7 +31,7 @@ This guide walks through types of documentation, how to parse them, and common c
 ## Types of Documentation
 
 ![Arduino documentation](arduinoDocs.PNG)
-<center>*The documentation page for Arduino, a physical computing technology.*</center>
+<p align="center">*The documentation page for Arduino, a physical computing technology.*</p>
 
 Documentation can look very VERY different from source to source, and not all documentation is well-written (arguably, most is not). Docs vary in organization and level of detail, among many other ways. What follows is a brief, non-exhaustive typology of stuff on the web:
 
@@ -61,7 +61,7 @@ This is what you'll find on GitHub. [See example: torch-rnn docs](https://github
 ## Reading and Using Documentation
 
 ![some code written in Python](optoCode.png)
-<center>*Python code written in the [Sublime Text Editor](#5-useful-options-commands-or-keyboard-shortcuts).*</center>
+<p align="center">*Python code written in the [Sublime Text Editor](#5-useful-options-commands-or-keyboard-shortcuts).*</p>
 
 ### 1. Narrowing Your Search Terms
 This is half the battle, since knowing an accurate search term will yield better results. For example, say I want to make a light display with Arduino that flashes different colours. Googling "arduino light display sound" might give me a wide range of results, some of which are unrelated to my project. But based on that, I might find that "sound-reactive LED arduino" or "arduino music visualizer" is closer to what I'm looking for. Additionally, consider if you can refine your search using [boolean operators or other methods](https://www.uvic.ca/library/research/tips/searchsmart/index.php).
