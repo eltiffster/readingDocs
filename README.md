@@ -66,7 +66,7 @@ With most code blocks, the documentation writer likely won't specify what langua
 
 Let's look at an IRL example from the [torch-rnn documentation](https://github.com/jcjohnson/torch-rnn) written by Justin Johnson:
 
-```
+```bash
 # Install most things using luarocks
 luarocks install torch
 luarocks install nn
