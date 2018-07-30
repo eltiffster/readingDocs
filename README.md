@@ -9,18 +9,35 @@ In short, I'm reading docs because I want to know what steps are involved and wh
 This guide walks through types of documentation, how to parse them, and common conventions in web documentation (e.g. README files on Github). It provides advice and tips to help you navigate docs and sift the dizzying amount of information on the internet. Although much of this advice holds true for many types of software, I'll be using examples from [Python](https://www.python.org/), [Machine Learning](https://github.com/jcjohnson/torch-rnn), [Command Line](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md), [Arduino](https://www.arduino.cc/), [JavaScript](https://www.w3schools.com/js/js_intro.asp), and [Twine](http://twinery.org/).
 
 ## Overview
-
+* [Types of Documentation](#types-of-documentation)
+  * [Tutorials](#tutorials)
+  * [Topical Guides](#technical-guides)
+  * [Reference Guides](#reference-guides)
+  * [Cookbooks](#cookbooks)
+  * [Help Forums](#help-forums)
+  * [README Files](#README-files)
+* [Reading and Using Documentation](#reading-and-using-documentation)
+  1. [Narrowing Your Search Terms](#1-narrowing-your-search-terms)
+  2. [Skim It](#2-skim-it)
+  3. [Code and the Command Line](#3-code-and-the-command-line)
+  4. [Copy/Paste](#4-copy-paste)
+  5. [Useful Options, Commands, or Keyboard Shortcuts](#5-useful-options-commands-or-keyboard-shortcuts)
+  6. ["There must be an easier way to do this..."](#6-if-you-think-there-must-be-an-easier-way-to-do-this-then-there-probably-is)
+  7. [Print Early, Print Often](#7-print-early-print-often)
+  8. [Start Small and Scale Up](#8-start-small-and-scale-up)
+  9. [Understanding Error Messages](#9-understanding-error-messages)
+  10. [Read More Documentation](#10-read-more-documentation)
 
 ## Types of Documentation
 
 Documentation can look very VERY different from source to source, and not all documentation is well-written (arguably, most is not). Docs vary in organization and level of detail, among many other ways. What follows is a brief, non-exhaustive typology of stuff on the web:
 
-- **Tutorials:** usually, step-by-step instructions to accomplish a specific task. Even if it's not exactly what you're looking for, similar projects might still have useful code you can modify.
-- **Topical information:** information about a specific subject or feature. [See example]().
-- **Reference guides:** this type of doc most resembles a literal dictionary and typically provides a bare-bones description of a specific function or command. Especially useful if you know vaguely what you need but you forget the syntax (what you actually type in). [See example]().
-- **Cookbooks:** A collection of code examples or recipes for a specific software. I've never found this organically online (examples are often rolled into other types of docs), but it seems pretty common in e-book or book format. You can find a lot of them through UVic Libraries and probably other library search portals too.
-- **Help Forums:** [Stack Overflow](https://stackoverflow.com/) is the most famous and often most helpful, although you can also find stuff in GitHub discussions or sometimes even reddit.
-- **README files:** This is what you'll find on GitHub. Most README files are split into sections:
+- #### Tutorials: usually, step-by-step instructions to accomplish a specific task. Even if it's not exactly what you're looking for, similar projects might still have useful code you can modify. [See examples](https://programminghistorian.org/en/lessons/) from Programming Historian.
+- #### Topical Guides: information about a specific subject or feature. [See example](https://internetarchive.readthedocs.io/en/latest/items.html) about Items in the Internet Archives library and API.
+- #### Reference Guides: this type of doc most resembles a literal dictionary and typically provides a bare-bones description of a specific function or command. Especially useful if you know vaguely what you need but you forget the syntax (what you actually type in). [See example](https://www.arduino.cc/reference/en/): Arduino's reference guide for functions.
+- #### Cookbooks: A collection of code examples or recipes for a specific software. I've never found this organically online (examples are often rolled into other types of docs), but it seems pretty common in e-book or book format. You can find a lot of them through UVic Libraries and probably other library search portals too.
+- #### Help Forums: [Stack Overflow](https://stackoverflow.com/) is the most (in)famous and often most helpful, although you can also find stuff in GitHub discussions or sometimes even reddit.
+- #### README Files: This is what you'll find on GitHub. [See example: torch-rnn docs](https://github.com/jcjohnson/torch-rnn) by Justin Johnson. (Technically, this guide you're reading is a very unconventional README.) Most README files are split into sections:
   - *Installation:* How to install something step-by-step.
   - *Dependencies or Requirements:* Other things that need to be pre-installed for it to work (e.g. code libraries or other software).
   - *Support:* Whether the software requires a specific operating system (e.g. Windows) or version (e.g. Python 3 vs. Python 2).
@@ -32,7 +49,7 @@ Documentation can look very VERY different from source to source, and not all do
 
 **Note:** Most documentation incorporates aspects of more than one type. In fact, it's rare to find a doc that doesn't.
 
-## On Reading and Using Documentation
+## Reading and Using Documentation
 
 ### 1. Narrowing Your Search Terms
 This is half the battle, since knowing an accurate search term will yield better results. For example, say I want to make a light display with Arduino that flashes different colours. Googling "arduino light display sound" might give me a wide range of results, some of which are unrelated to my project. But based on that, I might find that "sound-reactive LED arduino" or "arduino music visualizer" is closer to what I'm looking for. Additionally, consider if you can refine your search using [boolean operators or other methods](https://www.uvic.ca/library/research/tips/searchsmart/index.php).
@@ -42,14 +59,14 @@ No one reads documentation for the plot. Like other kinds of research, you'll li
 
 ### 3. Code and the Command Line
 In case you haven't guessed already:
-```bash
+```
 Text formatted in code blocks like this are commands
 to be typed in as is.
 ```
 Code can also be `formatted inline`. Often, the code blocks contain commands for Linux/Bash Command Line. You can find this in Terminal on a Mac or [Bash on Ubuntu on Windows](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) in Windows 10. For older Windows operating systems, you can try [Git BASH](https://gitforwindows.org/). (For more on the Command Line and what it's for, see this [excellent explanation](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md) by Jojo Karlin, Jonathan Reeve, Patrick Smyth, Steven Zweibel. You can also play around with the Command Line in [DH Box](http://dhbox.org/).
 
 How can you tell if some code is meant for the Command Line? You might see things like this:
-```
+```bash
 #This command installs some software named some_program
 sudo pip install some_program
 
