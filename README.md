@@ -123,7 +123,7 @@ You can also use this technique to alternate between two options by commenting o
 
 Additionally, you can print variables or values (see below) to the screen to help with debugging and comment them out after.
 
-### 6. If you think, "There must be an easier way to do this," then there probably is.
+### 6. If you think, "There must be an easier way to do this," then there probably is
 As I mentioned at the beginning of this guide, avoid reinventing the wheel wherever possible. In practical terms, this might mean searching for [a code library](https://www.techopedia.com/definition/3828/software-library) that does what you're looking for, rather than assuming you need to write something completely from scratch. If one library doesn't have a built-in option for your specific use case, a similar one might. Similarly, if a would-be solution is hard to get working, don't feel the need to make it work with brute force. There may be a different, less troublesome solution elsewhere.
 
 When reading documentation, look for examples, screenshots, or videos that show you exactly what the end result of some code or process looks like. This will not only help with debugging by comparing what you expect to what you get; it'll also help you decide if what you get is close enough what you're looking for—or if you want to look elsewhere.
