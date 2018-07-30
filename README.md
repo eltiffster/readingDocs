@@ -112,7 +112,9 @@ For better or worse, this is generally not the way coders operate. If anything, 
 However, chances are that you'll write a bit of original anyway, since you'll probably have to modify anything you find to suit the situation at hand. At the very least, you should change variable names ([what's a variable?](https://github.com/szweibel/DHSI-API-workshop/blob/master/python/sections/variables.md)) to something more descriptive for your project.
 
 ### 5. Useful Options, Commands, or Keyboard Shortcuts
-Here are some tips for working with code or text editors such as [Notepad++](https://notepad-plus-plus.org/), [Sublime](https://www.sublimetext.com/), or [Atom](https://atom.io/). **Note:** The exact keys vary depending on the editor.
+Here are some tips for working with code or text editors such as [Notepad++](https://notepad-plus-plus.org/), [Sublime](https://www.sublimetext.com/), or [Atom](https://atom.io/).
+
+**Note:** The exact keys vary depending on the editor and operating system (the below is meant for Windows PC). If you're using a Mac, replace Cntrl with the Command button.
 
 #### a. Word Wrap
 This is usually under the View dropdown menu in your text editor. Basically, it shifts words to a new line when it would otherwise continue outside the window—it's similar to how Microsoft Word automatically jumps to a new line once you've reached the maximum width of your document. Even if you have word wrap enabled, the code will still execute as if it were all written on the same line (this is very important in coding!).
@@ -212,4 +214,4 @@ If you've spent time [copy/pasting solutions](#4-copypaste) from the web, you ma
 ### 10. Read More Documentation
 Hopefully these tips help, but there's no real substitute for reading lots of documentation yourself and experimenting with code. Given how much documentation varies from source to source, it's impossible to anticipate every potential situation you could encounter.
 
-Over time, you'll get a feel for the scope and complexity of different projects. Where possible, try to come up with a project driven by your own interests rather than an arbitrary exercise. Like learning any language, even a programming language, navigating documentation is a skill earned through practice and the motivation to create or say something meaningful of your own.
+Over time, you'll get a feel for the scope and complexity of different projects. Where possible, try to come up with a project driven by your own interests rather than an arbitrary exercise. Like learning any language, even a programming language, navigating documentation is a skill earned through practice and the motivation to make/say something meaningful to you.
