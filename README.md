@@ -11,16 +11,16 @@ This guide walks through types of documentation, how to parse them, and common c
 ## Overview
 * [Types of Documentation](#types-of-documentation)
   * [Tutorials](#tutorials)
-  * [Topical Guides](#technical-guides)
+  * [Topical Guides](#topical-guides)
   * [Reference Guides](#reference-guides)
   * [Cookbooks](#cookbooks)
   * [Help Forums](#help-forums)
-  * [README Files](#README-files)
+  * [README Files](#readme-files)
 * [Reading and Using Documentation](#reading-and-using-documentation)
   1. [Narrowing Your Search Terms](#1-narrowing-your-search-terms)
   2. [Skim It](#2-skim-it)
   3. [Code and the Command Line](#3-code-and-the-command-line)
-  4. [Copy/Paste](#4-copy-paste)
+  4. [Copy/Paste](#4-copypaste)
   5. [Useful Options, Commands, or Keyboard Shortcuts](#5-useful-options-commands-or-keyboard-shortcuts)
   6. ["There must be an easier way to do this..."](#6-if-you-think-there-must-be-an-easier-way-to-do-this-then-there-probably-is)
   7. [Print Early, Print Often](#7-print-early-print-often)
@@ -46,7 +46,7 @@ A collection of code examples or recipes for a specific software. I've never fou
 ### Help Forums
 [Stack Overflow](https://stackoverflow.com/) is the most (in)famous and often most helpful, although you can also find stuff in GitHub discussions or sometimes even reddit.
 ### README Files
-This is what you'll find on GitHub. [See example: torch-rnn docs](https://github.com/jcjohnson/torch-rnn) by Justin Johnson. (Technically, this guide you're reading is a very unconventional README.) Most README files are split into sections:
+This is what you'll find on GitHub. [See example](https://github.com/jcjohnson/torch-rnn): torch-rnn docs by Justin Johnson. (Technically, this guide you're reading is a very unconventional README.) Most README files are split into sections:
   - *Installation:* How to install something step-by-step.
   - *Dependencies or Requirements:* Other things that need to be pre-installed for it to work (e.g. code libraries or other software).
   - *Support:* Whether the software requires a specific operating system (e.g. Windows) or version (e.g. Python 3 vs. Python 2).
@@ -75,7 +75,7 @@ In case you haven't guessed already:
 Text formatted in code blocks like this are commands
 to be typed in as is.
 ```
-Code can also be `formatted inline`. Often, the code blocks contain commands for Linux/Bash Command Line. You can find this in Terminal on a Mac or [Bash on Ubuntu on Windows](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) in Windows 10. For older Windows operating systems, you can try [Git BASH](https://gitforwindows.org/). (For more on the Command Line and what it's for, see this [excellent explanation](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md) by Jojo Karlin, Jonathan Reeve, Patrick Smyth, Steven Zweibel. You can also play around with the Command Line in [DH Box](http://dhbox.org/).
+Code can also be `formatted inline`. Often, the code blocks contain commands for Linux/Bash Command Line. You can find this in Terminal on a Mac or [Bash on Ubuntu on Windows](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10) in Windows 10. For older Windows operating systems, you can try [Git BASH](https://gitforwindows.org/). (For more on the Command Line and what it's for, see this [excellent explanation](https://github.com/szweibel/DHSI-API-workshop/blob/master/command-line/sections/what-is-the-command-line.md) by Jojo Karlin, Jonathan Reeve, Patrick Smyth, Steven Zweibel. You can also play around with the Command Line in [DH Box](http://dhbox.org/) without needing to set it up or accidentally deleting something.
 
 How can you tell if some code is meant for the Command Line? You might see things like this:
 ```bash
@@ -212,7 +212,7 @@ If you've spent time [copy/pasting solutions](#4-copypaste) from the web, you ma
 | Error | Sample Error Message | Description | Possible Fix |
 | -----------|---------|-------------|-------------------|
 | Missing library | *In Arduino:*<br/>`error: 'FastLED' was not declared in this scope` | Happens when you try to use a library that you don't have installed or forgot to include/import it. | Go to Sketch > Include Library > Manage Libraries and install the library you need (here, it's FastLED). If you installed the library but it's still not working, you may have forgotten to include it with `#include<libraryName.h>` (where libraryName is name of the library).|
-| Missing variable | *In Twine:*<br/>`Error: <<print>>: bad evaluation: myVar is not defined` | `_____ is not defined` is a classic case of the missing variable. It happens when you call a variable without having defined or declared it (i.e. assigned it a value) beforehand. <br><br>If you copy/paste something from a help forum, this can happen because whoever provided the solution used arbitrary variable names for the sake of demonstration.<br><br>There could also be a [scope issue](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html). |  Declare the variable somewhere in the code ahead (in an earlier line) than where you need it. Note that this will also depend on [the scope](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html) you want your variable to have. This means thinking about questions such as do I need to use the variable in multiple functions? Do I want the its value to be the same for each of the functions or change as the program runs? <br><br>It's helpful to understand [global vs. local variables](https://www.arduino.cc/reference/en/language/variables/variable-scope--qualifiers/scope/) too, but be aware that different programming languages or applications might handle scope differently. |
+| Missing variable | *In Twine:*<br/>`Error: <<print>>: bad evaluation: myVar is not defined` | `_____ is not defined` is a classic case of the missing variable. It happens when you call a variable without having defined or declared it (i.e. assigned it a value) beforehand. <br><br>If you copy/paste something from a help forum, this can happen because whoever provided the solution used arbitrary variable names for the sake of demonstration.<br><br>There could also be a [scope issue](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html). |  Declare the variable somewhere in the code ahead (in an earlier line) than where you need it. Note that this will also depend on [the scope](http://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html) you want your variable to have. Do you need to use the variable in multiple functions? Do you want the its value to be the same for each of the functions or change as the program runs? <br><br>It's helpful to understand [global vs. local variables](https://www.arduino.cc/reference/en/language/variables/variable-scope--qualifiers/scope/) too, but be aware that different programming languages or applications might handle scope differently. |
 | You're not my type | *In Python:*<br/>`TypeError: Can't convert 'int' object to str implicitly` | For many coding languages, variables and values can be sorted into [several data types](https://www.datacamp.com/community/tutorials/data-structures-python#primitive) (e.g. integer, string, list). When you try to perform an operation on one type of data that is meant for another type, you get this error.<br><br>In this example, Python is telling you that you're trying to treat an integer (a whole number) as if it were a string (of letters or characters or, in other words, text). This error occurs if you try to drop an integer into a prose statement.| Many programming languages have built-in ways of converting one data type to another. Here, you'd probably want the [str() method](https://developers.google.com/edu/python/strings).<br><br>You might also want to double-check what data type something is to see if you've declared it correctly. If you're not sure what type a variable is in Python, you can use the [type()](http://www.diveintopython.net/power_of_introspection/built_in_functions.html) method, which returns the type of a specific variable/value. |
 | Syntax error |*In JavaScript:*<br/>`SyntaxError: missing ; before statement` | This is maybe the most annoying problem of the bunch but also the easiest to fix. Chances are, you missed a punctuation mark somewhere. (A classic one is a missing semicolon at the end of a line.) | Pretty straightforward: find and correct the error. Sometimes copy/pasting the search error into Google will bring up a [Stack Overflow](https://stackoverflow.com/) question from someone who made a similar misstep. |
 
