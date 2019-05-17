@@ -116,7 +116,7 @@ When I talk to people in my home department (English Literature), some are reluc
 
 For better or worse, this is generally not the way coders operate. If anything, copy/pasting code is encouraged. Not only does it save you time and effort (and possibly a lot of frustration), but you can be reasonably confident that it will work and that you haven't introduced any errors by mistyping something. Of course, this should be balanced with opportunities to learn by writing your own code (even manually type out something you've found can be a good learning experience).
 
-However, chances are that you'll write a bit of original anyway, since you'll probably have to modify anything you find to suit the situation at hand. At the very least, you should change variable names ([what's a variable?](https://github.com/szweibel/DHSI-API-workshop/blob/master/python/sections/variables.md)) to something more descriptive for your project.
+However, chances are that you'll write a bit of original code anyway, since you'll probably have to modify anything you find to suit the situation at hand. At the very least, you should change variable names ([what's a variable?](https://github.com/szweibel/DHSI-API-workshop/blob/master/python/sections/variables.md)) to something more descriptive for your project.
 
 ### 5. Useful Options, Commands, or Keyboard Shortcuts
 Here are some tips for working with code or text editors such as [Notepad++](https://notepad-plus-plus.org/), [Sublime](https://www.sublimetext.com/), or [Atom](https://atom.io/).
